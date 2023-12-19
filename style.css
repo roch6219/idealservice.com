@@ -1,15 +1,17 @@
 .service {
   border-radius: 10px 10px;
-  border: 1px solid rgb(27, 196, 80);
+  border: 2px solid black
   box-shadow: 8px 16px gray;
 }
 
 .service:hover{
-    border-color: red;
+    background-color: black;
+    color: white;
     border-width: 2px;
 }
 
 .bi{
   color: red;
+  font-size: 20px;
 }
   
