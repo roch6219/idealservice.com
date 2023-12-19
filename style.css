@@ -14,13 +14,4 @@
   font-size: 20px;
 }
 
-@media (max-width: 768px){
-.social-icon{
-  margin-left: 20px;
-}
-}
-.social-icon{
-  display: block;
-}
-
   
