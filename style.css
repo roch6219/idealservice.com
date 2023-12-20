@@ -1,17 +1,56 @@
 .service {
-  border-radius: 10px 10px;
-  border: 2px solid black;
-  box-shadow: 8px 16px gray;
-}
-
-.service:hover{
-    background-color: black;
-    color: white;
-}
-
-.bi{
-  color: red;
-  font-size: 20px;
-}
-
+    border-radius: 10px 10px;
+    border: 2px solid black;
+    box-shadow: 8px 16px gray;
   
+  }
+
+  @media (max-width: 768px){
+    .service{
+      width: 60px;
+    }
+  }
+  
+  .card:hover{
+      border: 1px solid red;
+  }
+  
+  .bi{
+    color: red;
+    font-size: 15px;
+  }
+
+.navbar{
+  border-top-right-radius: 10px;
+}
+
+.social-icon{
+  margin-left: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-brand{
+  display: flex;
+}
+.navbar-collapse{
+  color: white;
+}
+
+@media (min-width: 992px){
+  .social-icon{
+    margin-left: 600px;
+  }
+}
+
+.navbar-light .navbar-toggler-icon{
+ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler{
+  border: 1px solid white;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
