@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          
         <link rel="stylesheet" href="style.css"/>
-        <!--<link rel="stylesheet" href="bootstrap.js"/>
-        <link rel="stylesheet" href="bootstrap.css"/>-->
+        <!--<link rel="stylesheet" href="bootstrap.js"/>-->
+        <link rel="stylesheet" href="bootstrap.min.css"/>
         
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,33 +16,37 @@
         
        <!--========================Navbar Section=============-->
        
-       <section id="#home" class="sticky-top border-top border-3 border-danger">
+       <section id="#home" class="sticky-top border-danger">
     
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger" id="nav">
   <div class="container-fluid">
-      <img src="canadaflag.jpg" alt="canada flag" class="img-fluid" style="height: 80px;">
-       <!--<div class="social-icon" style="margin-left: 600px">
-          <i class="bi bi-instagram m-2"></i> 
-          <i class="bi bi-facebook m-2"></i>
-          <i class="bi bi-twitter m-2"></i>
-       </div>-->  
-           
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <div class="social-brand">
+    <div class="brand text-white">CanIMM</div>
+       <div class="social-icon">
+        
+          <i class="bi bi-instagram m-2 text-white"></i> 
+          <i class="bi bi-facebook m-2 text-white"></i>
+          <i class="bi bi-twitter m-2 text-white"></i>
+       </div>  
+    </div>
+
+    <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class=" fas fa-bars" style="color: white; font-size: 28px;"></i></span>
+  
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link text-danger" aria-current="page" href="index.php" style="font-size:25px">Home</a>
+          <a class="nav-link text-white" aria-current="page" href="#about" style="font-size:18px; margin-right: 100px;">Home</a>
         </li>
         <!--<li class="nav-item">
-          <a class="nav-link text-danger" href="#about">About</a>
+          <a class="nav-link" href="#about">About</a>
         </li>-->
         <li class="nav-item">
-          <a class="nav-link text-danger" href="#services" style="font-size:25px">Services</a>
+          <a class="nav-link text-white" href="#services" style="font-size:18px; margin-right: 100px;">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="#contact" tabindex="-1" aria-disabled="true" style="font-size:25px">Contact</a>
+          <a class="nav-link text-white" href="#contact" tabindex="-1" aria-disabled="true" style="font-size:18px">Contact</a>
         </li>
       </ul>
     </div>
@@ -58,7 +62,7 @@
          
            
   <!--========================About Section==================-->
-  <section id="about" style="margin-left: 10px;" class="border-top border-3 border-bottom">
+  <section id="about" style="margin-left: 10px;" class=" border-3 border-bottom">
       <div class="container-fluid">
           <div class="row">
                <h2 style="font-weight: bold; margin-top: 50px; text-align: center; color: #34d5eb; margin-bottom: 30px;">We care for your canadian visa</h2>
@@ -76,40 +80,61 @@
                 
    <!--===============Service section============================= -->
                    
-   <section id="services" style="margin-bottom: 25px; padding-top: 40px;" class="">
-       <div class="container" style="">
+   <section id="services" style="margin-bottom: 50px; padding-top: 40px;" class="">
+       <div class="container">
            <div class="row">
         <h2 style="margin-top:70px; margin-bottom: 25px; font-weight: bold; color: #34d5eb">SERVICES</h2>
         </div>
-        <div class="row  d-flex justify-content-between "> 
+        <div class="row justify-content-center"> 
+
                 
-                <!--First service item-->
-                <div class="service col-lg-2   m-1">
-                    <h4 style="margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Family Sponsorship</h4>
-                        <p style="margin-top: 15px;">This Programm allow you to bring your spouse, partner or children to Canada. 
+               
+
+                    <div class="card m-2" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Work Visa</h5>
+                        <p class="card-text">This Visa will allow you to enter Canada and to take employement. it can be open or close work
+                          permit. We can assist with conseling; preparation of your Cv; applying for Jobs in Canada. and many more. contact  us to know more. 
                         </p>
+                        <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+                      </div>
                     </div>
-                
-                <!--second service item-->
-                    <div class="service col-lg-2 m-1 ">
-                        <h4 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Work Visa</h4>
-                        <p style=" margin-top: 15px;">This program will allow you to enter Canada as a worker with a designated employer. We can assist you with your work visa application.
+
+
+                    <div class="card m-2" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Family Sponsorship</h5>
+                        <p class="card-text">This visa allow you to bring your spouse; children; and parent to live permanently in Canada. We can make this
+                          process very simple by helping you to fill Ircc forms and gathering all the necesary documents. we can also help you to choose the best 
+                         application option
+
                         </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+
+
+                    <div class="card m-2" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Study visa</h5>
+                        <p class="card-text">This visa is issue to anyone who is interested to study in Canada. Our team will help you to find an academic institution
+                        everywhere in Canada. we can also assist with student accommodation in some state. let us konw if you kneed our assistance.</p>
+                        <a href="#" class="btn btn-primary ">Go somewhere</a>
+                      </div>
+                    </div>
+
+
+                    <div class="card m-2" style="width: 18rem;">
+                      <div class="card-body">
+                        <h5 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Visitor visa</h5>
+                        <p class="card-text">If you want to stay in Canada for than 6 months; you will need a visitor visa. we can help to prepare
+                          all the letters and the document you will need. we also can help to arrange an accommodation in a Hotel.
+                        </p>
+                        <a href="#" class="btn btn-primary mt-4">Go somewhere</a>
+                      </div>
                     </div>
                 
-                <!--third service item-->
-                    <div class="service col-lg-2  m-1 ">
-                        <h4 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Student Visa</h4>
-                        <p style=" margin-top: 15px;">the Student Visa allow you to study in Canada. We can assist you to understand and to submit an application for Visa.</p>
-                        
-                    </div>
                 
-                <!--fourth service item-->
-                    <div class="service col-lg-2  m-1 ">
-                        <h4 style=" margin-top: 5px;"><i class="bi bi-distribute-vertical"></i>Visitor Visa</h4>
-                        <p style=" margin-top: 15px;">You will need this Visa if you want to travel to Canada for stay less than 6 month. we can help to submit application.
-                       </p>
-                    </div>
                    
             </div>
        </div>
@@ -119,7 +144,7 @@
    
  <!--===============contact section============================= -->   
  <section id="contact" style=" margin-left: 10px; padding-top: 20px; padding-bottom: 40px;" class="">
-     <div class="container" style="">
+     <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 ">
                     <h1 style="text-align: center; margin-top: 130px; color: #34d5eb">Contact Us</h1>
@@ -220,5 +245,12 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>   
     </body>
 </html>
-
-
+              
+        
+                
+                
+            
+        
+          
+        
+       
